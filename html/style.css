@@ -1,10 +1,32 @@
 body {
-    background-image: url("kuvat/Metsatausta2.png");
+    background-image: url("kuvat/Metsatausta.png");
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
+    font-family: garamond, serif;
 }
 li {
+    float: right; 
     display: inline;
-    float: right;
 }
+li a {
+    
+    padding: 10px;
+    font-family: garamond, serif;
+    font-size: large;
+    font-weight: bolder;
+    color: #3d3d3d;
+    text-decoration: none;
+}
+
+ul {
+    position: fixed;
+    top: 50px;
+    width: 90%;
+    
+}
+
+img {
+    width: 150px;
+}
+
