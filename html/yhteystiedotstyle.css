@@ -84,6 +84,7 @@ p {
   width: 300px;
   border: 15px solid #818B6D;
   padding: 30px;
+  display: flex;
   border-radius: 70px;
   opacity: 0.8;
   margin: auto;
@@ -111,12 +112,17 @@ p {
     border-radius: 200px
   }
   .container {
-    display: flex
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+
 }
 .logo img {
     max-width: 8%;
     height: auto;
-    flex-direction: row;
+    flex: auto;
+    flex-direction: column;
     
 }
 
