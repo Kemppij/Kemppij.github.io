@@ -14,6 +14,7 @@ body {
     justify-content: flex-end; 
     align-items: center;
     padding-bottom: 50px;
+    
 }
 h1 img:hover{
    opacity: 0.8;
@@ -25,7 +26,8 @@ h1 img:hover{
     justify-content: flex-end;
     list-style: none;
     top: 30px;
-    width: 90%;
+    width: 80%;
+    
 }
 .navbar  a {
     
@@ -50,6 +52,7 @@ h1 img:hover{
     border-radius: 10px;
     color: #3d3d3d;
     -webkit-text-stroke: 0.5px #818B6D;
+    opacity: 0.6;
     
 }
 
@@ -110,8 +113,6 @@ h1 img:hover{
     }
 }
 
-
-
 /* SLIDER ENDS */
 
 h2 {
@@ -128,6 +129,25 @@ p1, p2 {
     
 }
 
+
+.slideshow.container {
+    display: flex;
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+
+}
+q {
+    font-size: 30px;
+    color: #475628;
+    padding: 8px 160px;
+    position: relative;
+    width: 100%;
+    text-align: center;
+    
+}
 footer {
     flex-direction: column;
     text-align: center;
