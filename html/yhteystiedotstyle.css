@@ -115,7 +115,7 @@ p {
 .logo img {
     max-width: 10%;
     height: auto;
-    display: flexbox;
+    display: flex;
     
 }
 
