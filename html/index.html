@@ -52,45 +52,17 @@
         </p>
     </section>
     
-    <div class="slideshow-container">
-        <div class="kysymyksia">
-            <q>Haluatteko vähentää lapsenne ruutuaikaa?</q>
-        </div>
-        <div>
-            <q>Kaipaatteko viihdykettä tulevaa automatkaa varten?</q>
-        </div>
-        <div>
-            <q>Ovatko kaikki lastenkirjanne luettu jo moneen kertaan, ja kaipaisitte vaihtelua iltasatuhetkiin?</q>
-        </div>
-        <div class="dot-container">
-            <span class="dot"></span>
-            <span class="dot"></span>
-            <span class="dot"></span>
-        </div>
+    <section>
+    <div class="hahmot">
+       
+        <img src="kuvat/morripuhuu.png" width="400px" alt="Örri Mörri hahmo">
+       
+        <img src="kuvat/poropuhuu.png" width="300px" alt="Poro hahmo">
+       
+        <img src="kuvat/pupupuhuu.png" width="300px" alt="Pupu hahmo">
+        
     </div>
-    <script>
-        let slideIndex = 0;
-        showSlides();
-
-        function showSlides() {
-            let i;
-            let slides =
-            document.getElementsByClassName("kysymyksia");
-            let dots =
-            document.getElementsByClassName("dot");
-            for (i = 0; i < slides.length; i++) {
-                slides[i].style.display = "none";
-            }
-            slideIndex++;
-            if (slideIndex > slides.length) {slideIndex = 1}
-            for (i = 0; i < dots.length; i++) {
-                dots[i].className.replace(" active", "");
-            }
-            slides[slideIndex-1].style.display = "block";
-            dots[slideIndex-1].className += " active";
-            setTimeout(showSlides, 3000); //3sek per teksti
-        }
-    </script>
+    </section>
 <footer>
     <br>
     <br>
