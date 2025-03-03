@@ -9,11 +9,30 @@ li {
     float: right; 
     display: block;
 }
-.navbar a {
+.navbar {
+    display: flex;
+    justify-content: flex-end; 
+    align-items: center;
+    padding-bottom: 50px;
+}
+h1 img:hover{
+   opacity: 0.8;
+}
+
+.navbar ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    list-style: none;
+    top: 30px;
+    width: 90%;
+}
+.navbar  a {
     
+    display: flex;
     padding: 20px;
-    font-family: palatino;
-    font-size: large;
+    font-family:sans-serif ;
+    font-size: x-large;
     font-weight: bolder;
     color: #3d3d3d;
     text-decoration: none;
@@ -23,10 +42,15 @@ li {
     border-radius: 10px;
     
 }
+
 .navbar a:hover {
-    border-style: solid;
-    border-bottom: #3d3d3d;
+    
+    background-color: #e6ecda;
+    
     border-radius: 10px;
+    color: #3d3d3d;
+    -webkit-text-stroke: 0.5px #818B6D;
+    opacity: 0.6;
     
 }
 
@@ -36,10 +60,10 @@ li {
     
 }
 
-ul {
-    position: fixed;
-    top: 50px;
-    width: 90%;
+
+.logo img {
+    width: 200px;
+    padding: 5px;
     
 }
 
@@ -58,13 +82,16 @@ h2 {
 p {
     background-color: rgb(255, 255, 255);
   width: 300px;
-  border: 15px solid rgb(49, 143, 49);
-  padding: 50px;
+  border: 15px solid #818B6D;
+  padding: 30px;
+  display: flex;
+  border-radius: 70px;
+  opacity: 0.8;
   margin: auto;
   text-align : center
   }
   .button {
-    background-color: #04AA6D;
+    background-color: #EDB4BD;
     border: 30px;
     color: hsl(0, 0%, 100%);
     padding: 25px 10px;
@@ -76,14 +103,28 @@ p {
     cursor: pointer;
     display: flex;
     justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
     width: 300px;
     height: 40px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
     transition: all 0.3s ease-in-out;
+    border-radius: 200px
   }
   .container {
     display: flex;
-    justify-content: center; /* Centers horizontally */
+    align-items: center;
+    justify-content: center;
+    
+
 }
+.logo img {
+    max-width: 8%;
+    height: auto;
+    flex: auto;
+    flex-direction: column;
+    
+}
+
   
 
