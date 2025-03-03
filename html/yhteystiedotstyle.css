@@ -102,6 +102,8 @@ p {
     cursor: pointer;
     display: flex;
     justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
     width: 300px;
     height: 40px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
@@ -109,13 +111,12 @@ p {
     border-radius: 200px
   }
   .container {
-    display: flex;
-    justify-content: center; /* Centers horizontally */
+    display: flex
 }
 .logo img {
-    max-width: 10%;
+    max-width: 8%;
     height: auto;
-    display: flex;
+    flex-direction: row;
     
 }
 

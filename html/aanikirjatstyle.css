@@ -85,4 +85,10 @@ footer {
     flex-direction: column;
     text-align: center;
 }
+.logo img {
+    max-width: 8%;
+    height: auto;
+    flex-direction: row;
+    
+}
 
