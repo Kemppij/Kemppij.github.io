@@ -5,7 +5,7 @@ body {
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
-    font-family: garamond, serif;
+    font-family: "comic neue";
     text-align: center;
     margin: auto;
 }
@@ -35,7 +35,7 @@ h1 img:hover{
     
     display: flex;
     padding: 20px;
-    font-family: ;
+    font-family: "comic neue";
     font-size: x-large;
     font-weight: bolder;
     color: #3d3d3d;
@@ -88,7 +88,7 @@ h1 img:hover{
     width: 100%;
     height: 140px;
     position: relative;
-}
+ }
 
 .slider .flex-container .item {
     width: var(--width);
@@ -118,17 +118,27 @@ h1 img:hover{
 /* SLIDER ENDS */
 
 h2 {
-    font-size: 48px;
+    font-size: 90px;
+    font-weight: 50;
+    font-family: moo lah lah;
+    color: #202020;
+    padding-left: 25%;
+    padding-right: 25%;
 }
 
 p1, p2 {
     display: inline-block;
-    font-size: x-large;
-    padding: 20px;
-    background-color: #EACACC;
-    border-radius: 20px;
+    font-size: xx-large;
+    padding: 5%;
+    background-color: #fafafa;
+    border-radius: 50px;
     opacity: 0.8;
+    width: 60%;
+    border: 5px solid #818B6D
     
+}
+button{
+
 }
 
 .hahmot {
