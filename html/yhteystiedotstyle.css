@@ -81,14 +81,16 @@ h2 {
 }
 p {
     background-color: rgb(255, 255, 255);
-  width: 300px;
-  border: 15px solid #818B6D;
+  width: 50%;
+  border: 5px solid #818B6D;
   padding: 30px;
   display: flex;
+  font-size: x-large;
   border-radius: 70px;
   opacity: 0.8;
   margin: auto;
   text-align : center
+
   }
   .button {
     background-color: #EDB4BD;
