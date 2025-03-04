@@ -1,90 +1,127 @@
 <!DOCTYPE html>
 <html lang="fi">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Äänikirjat</title>
-    <link href="aanikirjatstyle.css" type="text/css" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Äänikirjat</title>
+  <link href="aanikirjatstyle.css" type="text/css" rel="stylesheet">
 </head>
 <body>
-    <nav class="navbar">
-        <h1><img src="kuvat/logo.png" href="index.html" width="200px"></h1>
-        <ul>
-            <li><a href="index.html">Etusivu</a></li>
-            <li><a class="active" href="aanikirjat.html">Äänikirjat</a></li>
-            <li><a href="yhteystiedot.html">Yhteystiedot</a></li>
-       
-        </ul>
-   </nav>
-<div class="slider-container"
-    <h2>Äänikirjat luokittain</h2>
-    <div> <h3>Autokirjat</h3> 
-    <img src="kuvat/autot/akkaa_tokkaa_likenteessä.png" alt="äkkää tokkaa likenteessä" width="200" height="200">
-    <img src="kuvat/autot/Iloinen_autokirja.png" alt="Iloinen_autokirja" width="200" height="200"> 
-    <img src="kuvat/autot/junior_linjaautokirja.png" alt="junior_linjaautokirja" width ="200" height="200">
-    <img src="kuvat/autot/iso_kaivuri_ja_pienikaivuri.png" alt="iso_kaivuri_ja_pienikaivuri" width="200" height="200">
-    <img src="kuvat/autot/mega_kaivureiden_maailma.png" alt="mega_kaivureiden_maailma" width="200" height="200">
-    <img src="kuvat/autot/Autot_ja_muut_tietokirja.png" alt="Autot_ja_muut_tietokirja" width="200" height="200">
+    <body>
+
+        <nav class="navbar">
+            <h1><img src="kuvat/logo.png" href="index.html" width="200px"></h1>
+            <ul>
+                <li><a class="active" href="index.html">Etusivu</a></li>
+                <li><a href="aanikirjat.html">Äänikirjat</a></li>
+                <li><a href="yhteystiedot.html">Yhteystiedot</a></li>
+           
+            </ul>
+       </nav>
+
+  <!-- Slider for Autokirjat -->
+  <div class="slider-container">
+      <button class="arrow left">&#10094;</button>
+      <h2>Autokirjat</h2>
+      <div class="slider">
+          <img src="kuvat/autot/akkaa_tokkaa_likenteessä.png" alt="Book 1" class="slide">
+          <img src="kuvat/autot/Iloinen_autokirja.png" alt="Book 2" class="slide">
+          <img src="kuvat/autot/junior_linjaautokirja.png" alt="Book 3" class="slide">
+          <img src="kuvat/autot/iso_kaivuri_ja_pienikaivuri.png" alt="Book 4" class="slide">
+          <img src="kuvat/autot/mega_kaivureiden_maailma.png" alt="Book 5" class="slide">
+          <img src="kuvat/autot/Autot_ja_muut_tietokirja.png" alt="Book 6" class="slide">
+      </div>
+      <button class="arrow right">&#10095;</button>
+  </div>
+
+  <!-- Slider for Eläinkirjat -->
+  <div class="slider-container">
+      <button class="arrow left">&#10094;</button>
+      <h2>Eläinkirjat</h2>
+      <div class="slider">
+          <img src="kuvat/ELAIN/nalle_puh.png" alt="Book 1" class="slide">
+          <img src="kuvat/ELAIN/grimmin_elainsatuja.png" alt="Book 2" class="slide">
+          <img src="kuvat/ELAIN/arvaa_kuinka_sinua_rakastan.png" alt="Book 3" class="slide">
+          <img src="kuvat/ELAIN/fanni_ja_kiusattukaveri.png" alt="Book 4" class="slide">
+          <img src="kuvat/ELAIN/maatilan_mainiot_salapoliisit.png" alt="Book 5" class="slide">
+          <img src="kuvat/ELAIN/pupu_aanekaskirja.png" alt="Book 6" class="slide">
+      </div>
+      <button class="arrow right">&#10095;</button>
+  </div>
+
+  <!-- Slider for Muumikirjat -->
+  <div class="slider-container">
+      <button class="arrow left">&#10094;</button>
+      <h2>Muumikirjat</h2>
+      <div class="slider">
+          <img src="kuvat/muumi/muumi_pikkumyyjavillituuli.png" alt="Book 1" class="slide">
+          <img src="kuvat/muumi/muumi_ja_hyvaa_yota.png" alt="Book 2" class="slide">
+          <img src="kuvat/muumi/muumipeikkokohtaapimean.png" alt="Book 3" class="slide">
+          <img src="kuvat/muumi/nipsu_on_arka.png" alt="Book 4" class="slide">
+          <img src="kuvat/muumi/muumi_ja_suuri_tuhotulva.png" alt="Book 5" class="slide">
+          <img src="kuvat/muumi/muumi_merenlaulu.png" alt="Book 6" class="slide">
+      </div>
+      <button class="arrow right">&#10095;</button>
+  </div>
+
+  <!-- Slider for Satukirjat -->
+  <div class="slider-container">
+      <button class="arrow left">&#10094;</button>
+      <h2>Satukirjat</h2>
+      <div class="slider">
+          <img src="kuvat/SATUKIRJAT/ensimmainen_satuaarteeni.png" alt="Book 1" class="slide">
+          <img src="kuvat/SATUKIRJAT/LASTEN_OMA_SAtU.png" alt="Book 2" class="slide">
+          <img src="kuvat/SATUKIRJAT/pipsa_possu_satukirja.png" alt="Book 3" class="slide">
+          <img src="kuvat/SATUKIRJAT/ROHKEIDEN_TYTTOJEN_SATUKIRJA.png" alt="Book 4" class="slide">
+          <img src="kuvat/SATUKIRJAT/LASTEN_SUURI_SATUKIRJA.png" alt="Book 5" class="slide">
+          <img src="kuvat/SATUKIRJAT/hurjan_hauska_unikirja.png" alt="Book 6" class="slide">
+      </div>
+      <button class="arrow right">&#10095;</button>
+  </div>
+
+  <script>
+    // Select all slider containers
+    const sliderContainers = document.querySelectorAll('.slider-container');
+
+    sliderContainers.forEach(container => {
+      // Get the slider and arrow buttons within this container
+      const slider = container.querySelector('.slider');
+      const leftArrow = container.querySelector('.arrow.left');
+      const rightArrow = container.querySelector('.arrow.right');
+
+      // Set how much you want to scroll per click
+      const scrollAmount = 220;
+
+      // Add event listeners if the elements exist
+      if (leftArrow && slider) {
+        leftArrow.addEventListener('click', () => {
+          slider.scrollLeft -= scrollAmount;
+        });
+      }
+      if (rightArrow && slider) {
+        rightArrow.addEventListener('click', () => {
+          slider.scrollLeft += scrollAmount;
+        });
+      }
+    });
+  </script>
+<footer>
+   
+    <div class="logo">
+        <br>
+        <img id="insta" src="kuvat/logot/Instagram_icon.png" alt="Instagram_icon" width="50px" height="50px">
+        <img src="kuvat/logot/bluesky-app-transparent-icon.png" alt="bluesky-app-transparent-icon" width="50px" height="50px"
+        >
+        <img src="kuvat/logot/tiktok-logo-tikok-icon-transparent-tikok-app-logo-free.png" alt="tiktok-logo-tikok-icon-transparent-tikok-app-logo-free" width="50px" height="50px">
     </div>
-
-    <div> <h3>Eläinkirjat</h3> 
-        <img src="kuvat/ELAIN/elaintarhanpienokaiset.png" alt="elaintarhanpienokaiset" width="200" height="200">
-        <img src="kuvat/ELAIN/nalle_puh.png" alt="nalle_puh" width="200" height="200">
-        <img src="kuvat/ELAIN/pupu_aanekaskirja.png" alt="pupu_aanekaskirja" width="200" height="200">
-        <img src="kuvat/ELAIN/arvaa_kuinka_sinua_rakastan.png" alt="arvaa_kuinka_sinua_rakastan" width="200" height="200">
-        <img src="kuvat/ELAIN/fanni_ja_kiusattukaveri.png" alt="fanni_ja_kiusattu_kaveri" width="200" height="200">
-        <img src="kuvat/ELAIN/grimmin_elainsatuja.png" alt="grimmin_eläinsatuja" width="200" height="200">
-        </div>
-
-     <div> <h3>Muumikirjat</h3> 
-            <img src="kuvat/muumi/muumi_merenlaulu.png" alt="muumi_merenlaulu" width= "200" height="200">
-            <img src="kuvat/muumi/muumipeikkokohtaapimean.png" alt="muumipeikkokohtaapimean" width="190" height="200">
-            <img src="kuvat/muumi/muumi_pikkumyyjavillituuli.png" alt="muumi_pikkumyyjavillituuli" width="200" height="200">
-            <img src="kuvat/muumi/nipsu_on_arka.png" alt="nipsu_on_arka" width="200" height="200">
-            <img src="kuvat/muumi/muumi_ja_hyvaa_yota.png" alt="muumi_ja_hyvää_yotä" width="200" height="200">
-            <img src="kuvat/muumi/muumi_ja_suuri_tuhotulva.png" alt="muumi_ja_suuri_tuhotulva" width="200" height="200">
-            </div>
-
-     <div> <h3>Satukirjat</h3> 
-            <img src="kuvat/SATUKIRJAT/ensimmainen_satuaarteeni.png" alt="ensimmäinen_satuaarteeni" width= "200" height="200">
-            <img src="kuvat/SATUKIRJAT/holmot_iltasadut.png" alt="hölmöt_iltasadut" width="190" height="200">
-            <img src="kuvat/SATUKIRJAT/hurjan_hauska_unikirja.png" alt="hurjan_hauska_unikirja" width="200" height="200">
-            <img src="kuvat/SATUKIRJAT/LASTEN_OMA_SAtU.png" alt="Lasten_oma_satukirja" width="200" height="200">
-            <img src="kuvat/SATUKIRJAT/LASTEN_SUURI_SATUKIRJA.png" alt="Lasten_suuri_satukirja" width="200" height="200">
-            <img src="kuvat/SATUKIRJAT/ROHKEIDEN_TYTTOJEN_SATUKIRJA.png" alt="Rohkeiden_tyttöjen_satukirja" width="200" height="200">
-            </div>
-        </div>
-
-            <footer>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <div class="logo">
-                    <img id="insta" src="kuvat/logot/Instagram_icon.png" alt="Instagram_icon" width="50px" height="50px">
-                    <img src="kuvat/logot/bluesky-app-transparent-icon.png" alt="bluesky-app-transparent-icon" width="50px" height="50px"
-                    >
-                    <img src="kuvat/logot/tiktok-logo-tikok-icon-transparent-tikok-app-logo-free.png" alt="tiktok-logo-tikok-icon-transparent-tikok-app-logo-free" width="50px" height="50px">
-                </div>
-                <div>
-                    <p>Copyright &copy; 2025, LentäväLehmä Oy</p>
-                </div>
-                <div>
-                    <p><a href="yhteystiedot.html">info@lentavalehma.fi</a></p>
-                </div>
-            </footer>
+    <div>
+        <p>Copyright &copy; 2025, LentäväLehmä Oy</p>
+    </div>
+    <div>
+        <p><a href="yhteystiedot.html">info@lentavalehma.fi</a></p>
+    </div>
+    <br>
+</footer>
     
 </body>
 </html>
