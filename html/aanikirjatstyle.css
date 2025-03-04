@@ -1,154 +1,154 @@
 
 body {
-    background-image: url("kuvat/Metsatausta.png");
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-    font-family: "comic neue";
-    text-align: center;
-    margin: auto;
+  background-image: url("kuvat/Metsatausta.png");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  font-family: "comic neue";
+  text-align: center;
+  margin: auto;
 }
 
 .navbar {
-    display: flex;
-    justify-content: flex-end; 
-    align-items: center;
-    padding-bottom: 50px;
-    
-    
+  display: flex;
+  justify-content: flex-end; 
+  align-items: center;
+  padding-bottom: 50px;
+  
+  
 }
 h1 img:hover{
-   opacity: 0.8;
+ opacity: 0.8;
 }
 
 .navbar ul {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    list-style: none;
-    top: 30px;
-    width: 90%;
-    
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  list-style: none;
+  top: 30px;
+  width: 90%;
+  
 }
 .navbar  a {
-    
-    display: flex;
-    padding: 20px;
-    font-family: "comic neue";
-    font-size: x-large;
-    font-weight: bolder;
-    color: #3d3d3d;
-    text-decoration: none;
-    border: 2px solid #e6ecda;
-    border-style: hidden;
-    outline-color: #a0ac91;
-    border-radius: 10px;
-    
+  
+  display: flex;
+  padding: 20px;
+  font-family: "comic neue";
+  font-size: x-large;
+  font-weight: bolder;
+  color: #3d3d3d;
+  text-decoration: none;
+  border: 2px solid #e6ecda;
+  border-style: hidden;
+  outline-color: #a0ac91;
+  border-radius: 10px;
+  
 }
 
 .navbar a:hover {
-    
-    background-color: #e6ecda;
-    
-    border-radius: 10px;
-    color: #3d3d3d;
-    -webkit-text-stroke: 0.5px #818B6D;
-    opacity: 0.6;
-    
+  
+  background-color: #e6ecda;
+  
+  border-radius: 10px;
+  color: #3d3d3d;
+  -webkit-text-stroke: 0.5px #818B6D;
+  opacity: 0.6;
+  
 }
 
 .active {
-    background-color: #e6ecda;
-    border-radius: 10px;
-    
+  background-color: #e6ecda;
+  border-radius: 10px;
+  
 }
 
 
 .logo img {
-    width: 200px;
-    padding: 5px;
-    
+  width: 200px;
+  padding: 5px;
+  
 }
-    
-    /* Tästä alkaa äänikirja sliderit */
-    .slider-container {
-      position: relative; /* Important for absolute positioning of arrows */
-      width: auto;
-      margin: 10px auto;
-      overflow: hidden;
-      padding-bottom: 12px;
-      text-align: center;
-      font-family: "comic neue";
-    }
-    h2 {
-        font-family: "comic neue"
-    }
-    /* Slider row styling */
-    .slider {
-      display: flex;
-      overflow-x: auto;
-      scroll-behavior: smooth;
-    }
-    .slider::-webkit-scrollbar {
-      display: none;
-    }
+  
+  /* Tästä alkaa äänikirja sliderit */
+  .slider-container {
+    position: relative; /* Important for absolute positioning of arrows */
+    width: auto;
+    margin: 10px auto;
+    overflow: hidden;
+    padding-bottom: 12px;
+    text-align: center;
+    font-family: "comic neue";
+  }
+  h2 {
+      font-family: "comic neue"
+  }
+  /* Slider row styling */
+  .slider {
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+  }
+  .slider::-webkit-scrollbar {
+    display: none;
+  }
 
-    /* Slide styling */
-    .slide {
-      width: 200px;
-      margin-right: 20px;
-      border-radius: 20px;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
-      transition: transform 0.7s ease;
-    }
+  /* Slide styling */
+  .slide {
+    width: 200px;
+    margin-right: 20px;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    transition: transform 0.7s ease;
+  }
 
-    .slide:hover {
-      transform: scale(1.1);
-    }
+  .slide:hover {
+    transform: scale(1.1);
+  }
 
-    /* Arrow button styling */
-    .arrow {
-      position: absolute;
-      top: 50%;
-      transform: translateY(-50%);
-      background-color: rgba(0, 0, 0, 0.7);
-      color: white;
-      border: none;
-      font-size: 2rem;
-      cursor: pointer;
-      width: 50px;
-      height: 50px;
-      border-radius: 50%;
-      z-index: 10;
-      transition: 0.3s;
-    }
-    .arrow:hover {
-      background-color: rgba(255, 255, 255, 0.7);
-      color: black;
-    }
-    .arrow.left {
-      left: 10px;
-    }
-    .arrow.right {
-      right: 10px;
-    }
+  /* Arrow button styling */
+  .arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    border: none;
+    font-size: 2rem;
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    z-index: 10;
+    transition: 0.3s;
+  }
+  .arrow:hover {
+    background-color: rgba(255, 255, 255, 0.7);
+    color: black;
+  }
+  .arrow.left {
+    left: 10px;
+  }
+  .arrow.right {
+    right: 10px;
+  }
 /*Tähän loppuu äänikirja sliderit */
 
-    footer {
-    
-        text-align: center;
-        width: 100%;
-       
-        background-color: #a0ac91;
-        opacity: 0.9;
-       
-        
-        
-    }
-    .logo img {
-        max-width: 8%;
-        height: auto;
-        flex-direction: row;
-        
-    }
- 
+  footer {
+  
+      text-align: center;
+      width: 100%;
+     
+      background-color: #a0ac91;
+      opacity: 0.9;
+     
+      
+      
+  }
+  .logo img {
+      max-width: 8%;
+      height: auto;
+      flex-direction: row;
+      
+  }
+
