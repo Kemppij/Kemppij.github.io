@@ -15,7 +15,7 @@ li {
     align-items: center;
     padding-bottom: 50px;
 }
-h1 img:hover{
+.logo img:hover{
    opacity: 0.8;
 }
 
@@ -31,9 +31,8 @@ h1 img:hover{
     
     display: flex;
     padding: 20px;
-    font-family:sans-serif ;
+    font-family: "dynapuff";
     font-size: x-large;
-    font-weight: bolder;
     color: #3d3d3d;
     text-decoration: none;
     border: 2px solid #e6ecda;
@@ -92,7 +91,7 @@ p {
   text-align : center
 
   }
-  .button {
+  .otayhteyttabutton {
     background-color: #EDB4BD;
     border: 30px;
     color: hsl(0, 0%, 100%);
@@ -113,7 +112,7 @@ p {
     transition: all 0.3s ease-in-out;
     border-radius: 200px
   }
-  .container {
+  .otayhteyttacontainer {
     display: flex;
     align-items: center;
     justify-content: center;

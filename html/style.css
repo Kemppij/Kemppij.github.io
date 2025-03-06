@@ -12,29 +12,18 @@ body {
     
 }
 /* NAVIGOINTI */
-.topnav input[type=text]{
-    float:right;
-    padding: 8px;
-    border: none;
-    margin-top: 15px;
-    font-size: 17px;
-    font-family: "dynapuff";
-    background-color: #f6eee9;
-    margin-bottom: 15px;
+
+li {
+    float: right; 
+    display: block;
 }
 .navbar {
     display: flex;
     justify-content: flex-end; 
     align-items: center;
     padding-bottom: 50px;
-    
-    
 }
-h1{
-    display: flex;
-    justify-content: flex-start;
-}
-h1 img:hover{
+.logo img:hover{
    opacity: 0.8;
 }
 
@@ -45,7 +34,6 @@ h1 img:hover{
     list-style: none;
     top: 30px;
     width: 90%;
-    
 }
 .navbar  a {
     
@@ -59,7 +47,6 @@ h1 img:hover{
     border-style: hidden;
     outline-color: #a0ac91;
     border-radius: 10px;
-    
     
 }
 
@@ -79,16 +66,16 @@ h1 img:hover{
     border-radius: 10px;
     
 }
-/* NAVIGOINTI ENDS */
 
-.logo img {
-    display: flex;
+
+.logo {
     width: 200px;
     padding: 5px;
-    float: left;
-    
     
 }
+
+/* NAVIGOINTI ENDS */
+
 
 /* SLIDER*/
 .slider{
@@ -136,7 +123,7 @@ h1 img:hover{
 
 /* SLIDER ENDS */
 
-h2 {
+h1 {
     display: contents;
     font-size: 90px;
     font-weight: 50;
@@ -147,6 +134,10 @@ h2 {
 
 }
 
+h2 {
+    font-family: "dynapuff";
+    font-size: x-large;
+}
 p1, p2 {
     display: grid;
     font-size: xx-large;
@@ -159,10 +150,23 @@ p1, p2 {
     
     
 }
+p3{
+    background-color: rgb(255, 255, 255);
+    width: 50%;
+    border: 5px solid #818B6D;
+    padding: 30px;
+    display: flex;
+    font-size: x-large;
+    border-radius: 70px;
+    opacity: 0.8;
+    margin: auto;
+    text-align : center;
+    font-family: "goudy bookletter 1911";
+}
 
 
 .button1, .button2, .button3{
-    
+    display: inline-grid;
    font-size: 20px;
    align-content: center;
    justify-content: space-around;
@@ -176,7 +180,7 @@ p1, p2 {
    font-weight: 600;
    margin: 10px;
 }
-.button:hover{
+.button :hover{
     background-color: #fe9fad;
     opacity: 0.9;
     box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
@@ -197,7 +201,7 @@ p1, p2 {
     
 }
 .button1 {
-    
+    display: inline-grid;
     
 }
 
@@ -209,29 +213,124 @@ p1, p2 {
     grid-row-end: 12;
  }
   
-.poro {
+.container .poro {
   
     grid-column-start: 11;
     grid-column-end: 14;
     grid-row-start: 5;
     grid-row-end: 7;
 }
-.morri {
-  
+.container .morri {
+    
     grid-column-start: 5;
     grid-column-end: 6;
     grid-row-start: 10;
     grid-row-end: 11;
 }
-.pupu {
+.container .pupu {
    
     grid-column-start: 15;
     grid-column-end: 18;
     grid-row-start: 5;
     grid-row-end: 7;
 }
- 
+/* Tästä alkaa äänikirja sliderit */
+.slider-container {
+    position: relative; /* Important for absolute positioning of arrows */
+    width: auto;
+    margin: 10px auto;
+    overflow: hidden;
+    padding-bottom: 12px;
+    text-align: center;
+    font-family: "comic neue";
+  }
+  
+  /* Slider row styling */
+  .slider {
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+  }
+  .slider::-webkit-scrollbar {
+    display: none;
+  }
 
+  /* Slide styling */
+  .slide {
+    width: 200px;
+    margin-right: 20px;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    transition: transform 0.7s ease;
+  }
+
+  .slide:hover {
+    transform: scale(1.1);
+  }
+
+  /* Arrow button styling */
+  .arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    border: none;
+    font-size: 2rem;
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    z-index: 10;
+    transition: 0.3s;
+  }
+  .arrow:hover {
+    background-color: rgba(255, 255, 255, 0.7);
+    color: black;
+  }
+  .arrow.left {
+    left: 10px;
+  }
+  .arrow.right {
+    right: 10px;
+  }
+/*Tähän loppuu äänikirja sliderit */
+
+ /*Ota yhteyttä sivu*/
+ .otayhteyttabutton {
+    background-color: #EDB4BD;
+    border: 30px;
+    color: hsl(0, 0%, 100%);
+    padding: 25px 10px;
+    text-align: center;
+    text-decoration: rgb(116, 96, 58);
+    display: inline-block;
+    font-size: 35px;
+    margin: 40px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 300px;
+    height: 40px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+    transition: all 0.3s ease-in-out;
+    border-radius: 200px;
+    font-family: "dynapuff";
+  }
+
+  .otayhteyttacontainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.meista {
+    font-family: "dynapuff"; 
+    font-size: xxx-large;
+}
+/*Ota yhteyttä loppuu*/
 footer {
     text-align: center;
     width: 100%;
@@ -240,7 +339,7 @@ footer {
     opacity: 0.9;
 
 }
-.logo img {
+.some img {
     max-width: 8%;
     height: auto;
     flex-direction: row;
