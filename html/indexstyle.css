@@ -5,34 +5,28 @@ body {
     background-size: cover;
     font-family: garamond, serif;
 }
-li {
+i {
     float: right; 
     display: block;
 }
-.navbar a {
-    
-    padding: 20px;
-    font-family: palatino;
-    font-size: large;
-    font-weight: bolder;
-    color: #3d3d3d;
-    text-decoration: none;
-    border: 2px solid #e6ecda;
-    border-style: hidden;
-    outline-color: #a0ac91;
-    border-radius: 10px;
-    
+.navbar {
+    display: flex;
+    justify-content: flex-end; 
+    align-items: center;
+    padding-bottom: 50px;
 }
-.navbar a:hover {
-    border-style: solid;
-    border-bottom: #3d3d3d;
-    border-radius: 10px;
-    
+h1 img:hover{
+   opacity: 0.8;
 }
 
-.active {
-    background-color: #e6ecda;
-    border-radius: 10px;
+.navbar ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    list-style: none;
+    top: 30px;
+    width: 90%;
+
     
 }
 

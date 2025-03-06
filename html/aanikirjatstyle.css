@@ -9,65 +9,77 @@ body {
   margin: auto;
 }
 
+}
+.topnav input[type=text]{
+    float:right;
+    padding: 8px;
+    border: none;
+    margin-top: 15px;
+    font-size: 17px;
+    font-family: "dynapuff";
+    background-color: #f6eee9;
+    margin-bottom: 15px;
+}
 .navbar {
-  display: flex;
-  justify-content: flex-end; 
-  align-items: center;
-  padding-bottom: 50px;
-  
-  
+    display: flex;
+    justify-content: flex-end; 
+    align-items: center;
+    padding-bottom: 50px;
+    
+    
 }
 h1 img:hover{
- opacity: 0.8;
+   opacity: 0.8;
 }
 
 .navbar ul {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
-  list-style: none;
-  top: 30px;
-  width: 90%;
-  
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    list-style: none;
+    top: 30px;
+    width: 90%;
+    
 }
 .navbar  a {
-  
-  display: flex;
-  padding: 20px;
-  font-family: "comic neue";
-  font-size: x-large;
-  font-weight: bolder;
-  color: #3d3d3d;
-  text-decoration: none;
-  border: 2px solid #e6ecda;
-  border-style: hidden;
-  outline-color: #a0ac91;
-  border-radius: 10px;
-  
+    
+    display: flex;
+    padding: 20px;
+    font-family: "dynapuff";
+    font-size: x-large;
+    color: #3d3d3d;
+    text-decoration: none;
+    border: 2px solid #e6ecda;
+    border-style: hidden;
+    outline-color: #a0ac91;
+    border-radius: 10px;
+    
+    
 }
 
 .navbar a:hover {
-  
-  background-color: #e6ecda;
-  
-  border-radius: 10px;
-  color: #3d3d3d;
-  -webkit-text-stroke: 0.5px #818B6D;
-  opacity: 0.6;
-  
+    
+    background-color: #e6ecda;
+    
+    border-radius: 10px;
+    color: #3d3d3d;
+    -webkit-text-stroke: 0.5px #818B6D;
+    opacity: 0.6;
+    
 }
 
 .active {
-  background-color: #e6ecda;
-  border-radius: 10px;
-  
+    background-color: #e6ecda;
+    border-radius: 10px;
+    
 }
 
 
 .logo img {
-  width: 200px;
-  padding: 5px;
-  
+    
+    width: 200px;
+    padding: 5px; 
+    
 }
   
   /* Tästä alkaa äänikirja sliderit */
