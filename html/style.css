@@ -25,13 +25,46 @@ li {
     padding-bottom: 50px;
 }
 
-/* Responsive Adjustments */
 @media screen and (max-width: 600px) {
     .navbar {
+        display: flex;
         flex-direction: column;
         align-items: center;
+        width: 100%;
+    }
+
+    .navbar ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 0;
+        width: 100%;
+    }
+
+    .navbar ul li {
+        width: 50%;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .navbar ul li:last-child {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .navbar ul li a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        text-align: center;
     }
 }
+
+
 
 
 
