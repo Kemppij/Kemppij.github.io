@@ -25,6 +25,14 @@ li {
     padding-bottom: 50px;
 }
 
+/* Responsive Adjustments */
+@media screen and (max-width: 600px) {
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
 
 
 .navbar ul {
@@ -124,6 +132,8 @@ li {
 
 /* SLIDER ENDS */
 
+
+
 h1 {
     display: contents;
     font-size: 90px;
@@ -206,7 +216,7 @@ p3{
     border: 0px solid;
     width: 200px;
     height: 80px;
-    background-color: #fe9fad;
+    background-color: #67343b;
     color: #3d3d3d;
     font-family: "dynapuff";
     font-weight: 600;
@@ -324,6 +334,7 @@ p3{
     display: flex;
     overflow-x: auto;
     scroll-behavior: smooth;
+    mask-image: none;
   }
   .slider::-webkit-scrollbar {
     display: none;
@@ -371,11 +382,13 @@ p3{
   .arrow.right {
     right: 10px;
   }
+
+  
 /*Tähän loppuu äänikirja sliderit */
 
  /*Ota yhteyttä sivu*/
  .otayhteyttabutton {
-    background-color: #EDB4BD;
+    background-color: hsl(351, 76%, 77%);
     border: 30px;
     color: hsl(0, 0%, 100%);
     padding: 25px 10px;
@@ -423,4 +436,4 @@ footer {
     flex-direction: row;
     
 }
-
+ 
