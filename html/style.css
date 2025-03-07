@@ -26,6 +26,9 @@ li {
 }
 
 @media screen and (max-width: 700px) {
+    body {
+        background-size: 700px;
+    }
     .navbar {
         display: flex;
         flex-direction: column;
@@ -145,8 +148,17 @@ li {
     left: 100%;
     animation: autoRun 14s linear infinite;
     animation-delay: calc( ( 14s / 14) * (var(--position) - 1));
+}
 
-
+@media only screen and (max-width: 700px){
+    .slider .flex-container .item {
+        width: var(--width);
+        height: var(--height);
+        position: absolute;
+        left: 100%;
+        animation: autoRun 14s linear infinite;
+        animation-delay: calc( ( 56s / 14) * (var(--position) - 1));
+    }
 }
 .slider .flex-container .item img{
   width: 120px;
@@ -348,7 +360,7 @@ p3{
 /* Tästä alkaa äänikirja sliderit */
 .slider-container {
     position: relative; /* Important for absolute positioning of arrows */
-    width: auto;
+    width: 60%;
     margin: 10px auto;
     overflow: hidden;
     padding-bottom: 12px;
