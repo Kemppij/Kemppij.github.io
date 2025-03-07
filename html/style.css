@@ -388,9 +388,9 @@ p3{
 
  /*Ota yhteyttä sivu*/
  .otayhteyttabutton {
-    background-color: hsl(351, 76%, 77%);
+    background-color: hsl(351, 85%, 87%);
     border: 30px;
-    color: hsl(0, 0%, 100%);
+    color: hsl(0, 0%, 0%);
     padding: 25px 10px;
     text-align: center;
     text-decoration: rgb(116, 96, 58);
