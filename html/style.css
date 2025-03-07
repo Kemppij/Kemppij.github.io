@@ -363,11 +363,17 @@ p3{
   }
   
   /* Slider row styling */
-  .slider {
+  .aanikirja_slider {
     display: flex;
     overflow-x: auto;
     scroll-behavior: smooth;
-    mask-image: none;
+    mask-image: linear-gradient(
+        to right,
+        rgba(0, 0, 0, 1) 80%,   /* Fully visible on the left */
+        rgba(0, 0, 0, 1) 80%,  /* Keep visibility strong for a while */
+        rgba(0, 0, 0, 0) 100%  /* Gradual fade-out towards the right */
+    );
+
   }
   .slider::-webkit-scrollbar {
     display: none;

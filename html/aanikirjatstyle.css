@@ -96,7 +96,7 @@ h1 img:hover{
       font-family: "comic neue"
   }
   /* Slider row styling */
-  .slider {
+  .aanikirja_slider {
     display: flex;
     overflow-x: auto;
     scroll-behavior: smooth;
