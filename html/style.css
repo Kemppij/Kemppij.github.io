@@ -257,22 +257,6 @@ p1, p2 {
     text-align: left;
 }
 
-.p3
- {
-    background-color: rgb(255, 255, 255);
-    width: 50%;
-    border: 90px solid #818B6D;
-    padding: 30px;
-    display: flex;
-    font-size: x-large;
-    border-radius: 70px;
-    opacity: 0.8;
-    margin: auto;
-    text-align: center;
-    font-family: "Goudy Bookletter 1911";
-}
-
-
 
 .container {
     display: grid;
@@ -468,6 +452,28 @@ p1, p2 {
 /*Tähän loppuu äänikirja sliderit */
 
  /*Ota yhteyttä sivu*/
+
+ p3
+ {
+    background-color: rgb(255, 255, 255);
+    width: 50%;
+    border: 5px solid #818B6D;
+    padding: 30px;
+    display: flex;
+    font-size: x-large;
+    border-radius: 70px;
+    opacity: 0.8;
+    margin: auto;
+    text-align : center;
+    font-family: "goudy bookletter 1911";
+}
+
+@media screen and (max-width: 700px) {
+    p3 {
+        font-size: large;
+    }
+}
+
  .otayhteyttabutton {
     background-color: hsl(351, 85%, 87%);
     border: 30px;
