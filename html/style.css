@@ -151,7 +151,7 @@ li {
     animation-delay: calc( ( 14s / 14) * (var(--position) - 1));
 }
 
-@media only screen and (max-width: 700px){
+@media screen and (max-width: 700px){
     .slider .flex-container .item {
         width: var(--width);
         height: var(--height);
@@ -178,11 +178,7 @@ li {
 
 /* SLIDER ENDS */
 
-@media screen and (max-width: 700px){
-    h1{
-        font-size: 40px;
-    }
-}
+
 
 h1 {
     display: contents;
@@ -194,7 +190,49 @@ h1 {
     padding-right: 25%;
 
 }
-
+@media screen and (max-width: 700px){
+    .header {
+        font-size: 40px;
+    }
+    .container {
+        display: grid;
+        
+    }
+    
+    .container .item1 {
+        display: grid;
+        grid-column: auto;
+    }
+    
+     .item2 {
+        display: grid;
+    grid-column: auto;
+     }
+      
+    .container .poro {
+      
+       display: none;
+    }
+    .container .morri {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        flex-direction: column;
+        flex-wrap: wrap;
+        
+    }
+    .container .pupu {
+       
+       display: none;
+    }
+    .button-container {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        
+    }
+    
+}
 h2 {
     font-family: "dynapuff";
     font-size: x-large;
@@ -207,7 +245,7 @@ p {
 
 p1, p2 {
     display: grid;
-    font-size: xx-large;
+    font-size: x-large;
     padding: 5%;
     background-color: #fff6f6;
     border-radius: 10px;
@@ -229,22 +267,52 @@ p3{
     text-align : center;
     font-family: "goudy bookletter 1911";
 }
+.container {
+    display: grid;
+    grid-template-columns: repeat(20, 5%);
+    grid-template-rows: 20fr;
 
-.button1, .button2, .button{
-    display: inline-block;
-   font-size: 20px;
-   align-content: center;
-   justify-content: space-around;
-   border-radius: 5%;
-   border: 0px solid;
-   width: 200px;
-   height: 80px;
-   background-color: #fbccccce;
-   color: #3d3d3d;
-   font-family: "dynapuff";
-   font-weight: 600;
-   margin: 10px;
 }
+
+.item1 {
+    display: grid;
+    grid-column-start: 2;
+    grid-column-end: 10;
+    grid-row-start: 3;
+    grid-row-end: 7;
+    
+}
+
+ .item2 {
+    display: grid;
+    grid-column-start: 11;
+    grid-column-end: 20;
+    grid-row-start: 8;
+    grid-row-end: 12;
+ }
+  
+.container .poro {
+  
+    grid-column-start: 11;
+    grid-column-end: 14;
+    grid-row-start: 5;
+    grid-row-end: 7;
+}
+.container .morri {
+    
+    grid-column-start: 5;
+    grid-column-end: 6;
+    grid-row-start: 10;
+    grid-row-end: 11;
+}
+.container .pupu {
+   
+    grid-column-start: 15;
+    grid-column-end: 18;
+    grid-row-start: 5;
+    grid-row-end: 7;
+}
+
 .button-container {
     display: flex;
     justify-content: center;
@@ -317,51 +385,7 @@ p3{
     box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),
      0 17px 50px 0 rgba(0,0,0,0.19);
 }
- .container {
-    display: grid;
-    grid-template-columns: repeat(20, 5%);
-    grid-template-rows: 20fr;
-
-}
-
-.item1 {
-    display: grid;
-    grid-column-start: 2;
-    grid-column-end: 10;
-    grid-row-start: 3;
-    grid-row-end: 7;
-    
-}
-
- .item2 {
-    display: grid;
-    grid-column-start: 11;
-    grid-column-end: 20;
-    grid-row-start: 8;
-    grid-row-end: 12;
- }
-  
-.container .poro {
-  
-    grid-column-start: 11;
-    grid-column-end: 14;
-    grid-row-start: 5;
-    grid-row-end: 7;
-}
-.container .morri {
-    
-    grid-column-start: 5;
-    grid-column-end: 6;
-    grid-row-start: 10;
-    grid-row-end: 11;
-}
-.container .pupu {
-   
-    grid-column-start: 15;
-    grid-column-end: 18;
-    grid-row-start: 5;
-    grid-row-end: 7;
-}
+ 
 /* Tästä alkaa äänikirja sliderit */
 .slider-container {
     position: relative; /* Important for absolute positioning of arrows */
