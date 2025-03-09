@@ -21,6 +21,7 @@ body {
         background-image: url('kuvat/Metsataustamobile.png');
         background-repeat: no-repeat;
         margin: 5px;
+        overflow-x: hidden !important;
     }
     .navbar {
         display: flex;
@@ -150,19 +151,27 @@ li {
     width: var(--width);
     height: var(--height);
     position: absolute;
-    left: 100%;
+    right: 100%;
     animation: autoRun 14s linear infinite;
     animation-delay: calc( ( 14s / 14) * (var(--position) - 1));
 }
 
-@media only screen and (max-width: 600px){
+@media only screen and (max-width: 700px){
     .slider .flex-container .item {
         width: var(--width);
         height: var(--height);
         position: absolute;
-        left: 100%;
+        right: 100%;
         animation: autoRun 14s linear infinite;
         animation-delay: calc( ( 56s / 14) * (var(--position) - 1));
+    }
+    .flex-container{
+        display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+    width: 60%;
+    height: 140px;
+    position: relative;
     }
 }
 .slider .flex-container .item img{
@@ -173,10 +182,10 @@ li {
 }
 @keyframes autoRun{
     from{
-        left: 100%;
+        right: 100%;
     }
     to{
-        left: calc(var(--width)* -1);
+        right: calc(var(--width)* -1);
     }
 }
 
@@ -197,6 +206,7 @@ h1 {
 @media only screen and (max-width: 600px){
     .header {
         font-size: 40px;
+        overflow-x: hidden !important;
     }
     .grid-container{
         
@@ -208,8 +218,7 @@ h1 {
         justify-content: center;
         align-items: center;
        
-        
-        
+       
     }
     .grid-container .poro, .pupu, .morri {
         display: none;
