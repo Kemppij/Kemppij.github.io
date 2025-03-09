@@ -72,13 +72,17 @@ img {
 }
 
 footer {
-    flex-direction: column;
+    margin-top: auto; /* Pushes the footer to the bottom */
     text-align: center;
+    width: 100%;
+    background-color: #a0ac91;
+    opacity: 0.9;
+    padding: 20px;
 }
 h2 {
     text-align : center
 }
-p4 {
+.meistaTeksti {
     background-color: rgb(255, 255, 255);
   width: 50%;
   border: 5px solid #818B6D;
@@ -121,7 +125,7 @@ p4 {
 }
 .logo img {
     max-width: 8%;
-    height: auto;
+    width :200px;
     flex: auto;
     flex-direction: column;
     

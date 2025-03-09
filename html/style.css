@@ -115,7 +115,7 @@ li {
     
 }
 
-.logo {
+.logo img {
     width: 200px;
     padding: 5px;
     
@@ -425,7 +425,7 @@ p1, p2 {
 
  /*Ota yhteyttä sivu*/
 
- p3
+ .meistaTeksti
  {
     background-color: rgb(255, 255, 255);
     width: 50%;
@@ -441,7 +441,7 @@ p1, p2 {
 }
 
 @media screen and (max-width: 700px) {
-    p3 {
+    .meistaTeksti{
         font-size: large;
     }
 }
@@ -488,10 +488,16 @@ footer {
     width: 100%;
     background-color: #a0ac91;
     opacity: 0.9;
+    width: 100vw;
+}
+
+.some img {
+    width:50px;
+    height: 50px;
 }
 
 .logo img {
-    max-width: 8%;
+    max-width: 100%;
     height: auto;
     flex-direction: row;
     
