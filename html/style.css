@@ -215,6 +215,7 @@ h2 {
 p {
     font-family: "comic neue";
     font-size: large;
+    overflow: hidden;
 }
 
 p1, p2 {
