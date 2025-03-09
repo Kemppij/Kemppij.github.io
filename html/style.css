@@ -196,45 +196,16 @@ h1 {
     .header {
         font-size: 40px;
     }
-    .container {
+    .grid-container{
         display: grid;
-        
-    }
-    
-    .container .item1 {
-        display: grid;
-        grid-column: auto;
-    }
-    
-     .item2 {
-        display: grid;
-    grid-column: auto;
-     }
-      
-    .container .poro {
-      
-       display: none;
-    }
-    .container .morri {
-        display: flex;
-        justify-content: flex-end;
-        align-items: center;
-        flex-direction: column;
-        flex-wrap: wrap;
-        
-    }
-    .container .pupu {
-       
-       display: none;
-    }
-    .button-container {
-        display: flex;
+        grid-template-columns: fit-content(400px) ;
         justify-content: center;
-        flex-direction: column;
-        
+        gap: 15px;
+        width: 100%;
     }
-    
-    
+    .grid-container .poro, .pupu {
+        display: none;
+    }
 }
 h2 {
     font-family: "dynapuff";
@@ -258,7 +229,7 @@ p1, p2 {
 }
 
 
-.container {
+.grid-container {
     display: grid;
     grid-template-columns: repeat(20, 5%);
     grid-template-rows: 20fr;
@@ -282,21 +253,21 @@ p1, p2 {
     grid-row-end: 12;
  }
   
-.container .poro {
+.grid-container .poro {
   
     grid-column-start: 11;
     grid-column-end: 14;
     grid-row-start: 5;
     grid-row-end: 7;
 }
-.container .morri {
+.grid-container .morri {
     
     grid-column-start: 5;
     grid-column-end: 6;
     grid-row-start: 10;
     grid-row-end: 11;
 }
-.container .pupu {
+.grid-container .pupu {
    
     grid-column-start: 15;
     grid-column-end: 18;
