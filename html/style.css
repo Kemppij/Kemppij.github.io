@@ -480,8 +480,7 @@ p {
 
  /*Ota yhteyttä sivu*/
 
- p3
- {
+ .meistaTeksti{
     background-color: rgb(255, 255, 255);
     width: 50%;
     border: 5px solid #818B6D;
@@ -546,7 +545,7 @@ footer {
 }
 
 .some img {
-    max-width: 8%;
+    max-width: 7%;
     height: auto;
     flex-direction: row;
     
