@@ -330,8 +330,8 @@ p {
 }
 
 .box-container a:link{
-    background-color: #fe9fad;
-  color: #3d3d3d;
+    background-color: hsl(351, 85%, 87%);
+  color: #000000;
   padding: 5px 10px;
   text-align: center;
   text-decoration: none;
@@ -343,11 +343,11 @@ p {
     font-size: 20px;
     align-content: center;
     justify-content: space-around;
-    border-radius: 5%;
+    border-radius: 200px;
     border: 0px solid;
     width: 200px;
     height: 80px;
-    background-color: #fe9fad;
+    background-color: hsl(351, 85%, 87%);
     color: #3d3d3d;
     font-family: "dynapuff";
     font-weight: 600;
