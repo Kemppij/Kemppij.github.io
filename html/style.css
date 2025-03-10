@@ -155,25 +155,6 @@ li {
     animation: autoRun 14s linear infinite;
     animation-delay: calc( ( 14s / 14) * (var(--position) - 1));
 }
-
-@media only screen and (max-width: 700px){
-    .slider .flex-container .item {
-        width: var(--width);
-        height: var(--height);
-        position: absolute;
-        right: 100%;
-        animation: autoRun 14s linear infinite;
-        animation-delay: calc( ( 56s / 14) * (var(--position) - 1));
-    }
-    .flex-container{
-        display: flex;
-    justify-content: flex-start;
-    flex-direction: row;
-    width: 60%;
-    height: 140px;
-    position: relative;
-    }
-}
 .slider .flex-container .item img{
   width: 120px;
   height: 140px;
@@ -193,57 +174,31 @@ li {
 
 
 
-h1 {
-    display: contents;
-    font-size: 90px;
-    font-weight: 50;
-    font-family: moo lah lah;
-    color: #202020;
-    padding-left: 25%;
-    padding-right: 25%;
 
-}
-@media only screen and (max-width: 600px){
-    .header {
-        font-size: 40px;
-        overflow-x: hidden !important;
-    }
-    .grid-container{
-        
-        display: grid;
-        grid-template-columns: repeat(auto-fill, 186px);
-        margin-left: 25%;
-        margin-right: 25%;
-        max-width: 0%;
-        justify-content: center;
-        align-items: center;
-       
-       
-    }
-    .grid-container .poro, .pupu, .morri {
-        display: none;
-    }
-    .item1, .item2 {
-        display: grid;
-        align-content: center;
+    h1 {
+        display: block;
+        font-size: 90px;
+        font-weight: 50;
+        font-family: moo lah lah;
+        color: #202020;
+        margin: 0 auto;
         text-align: center;
-        margin: 0%;
-        width: 300px;   
-        column-gap: 10px;
     }
     
-
+    @media only screen and (max-width: 600px) {
+        h1 {
+            font-size: 40px;
+            padding: 0%;
+            
+        }
+    }
    
-    .button-container{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        font-size: 20px;
-        align-content: center;
-        width: 200px;
-        height: 60px;
-        margin-left: 25%;
-        margin-right: 25%;
+
+
+@media only screen and (max-width: 600px){
+    .flex-container, .item{
+        display: none;
+
     }
     
 }
@@ -269,20 +224,52 @@ p {
     font-family: "Goudy bookletter 1911";
     text-align: left;
     margin: 10px;
-
     margin-bottom: 50px;
    
 }
 
 
-.grid-container {
+.box-container {
     display: grid;
     grid-template-columns: repeat(20, 5%);
     grid-template-rows: 20fr;
     box-sizing: border-box;
-    
-
 }
+
+@media only screen and (max-width: 600px) {
+    .box-container {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        font-size: large;
+    }
+    .box-container .poro, .pupu {
+        display: none;
+    }
+    .box-container .morri {
+        position: static;
+        width: 300px;
+    }
+    .box-container .item1, .box-container .item2 {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        text-align: left;
+        align-items: center;
+        margin: 5%;
+        width: 100%;
+        column-gap: 10px;
+        padding: 10%;
+        background-color: #fff6f6;
+        border-radius: 10px;
+        opacity: 0.9;
+        font-size: large;
+        max-width: 70%;
+    }
+  }
 
 .item1 {
     display: inline-grid;
@@ -305,21 +292,21 @@ p {
 
  }
   
-.grid-container .poro {
+.box-container .poro {
   
     grid-column-start: 11;
     grid-column-end: 14;
     grid-row-start: 5;
     grid-row-end: 7;
 }
-.grid-container .morri {
+.box-container .morri {
     
     grid-column-start: 5;
     grid-column-end: 6;
     grid-row-start: 10;
     grid-row-end: 11;
 }
-.grid-container .pupu {
+.box-container .pupu {
    
     grid-column-start: 15;
     grid-column-end: 18;
@@ -335,10 +322,9 @@ p {
     flex-direction: column;
     align-items: center;
     
-    
 }
 
-.grid-container a:link{
+.box-container a:link{
     background-color: #fe9fad;
   color: #3d3d3d;
   padding: 5px 10px;
@@ -346,8 +332,9 @@ p {
   text-decoration: none;
   display: inline-block;
 }
-.button1{
-    display: inline-block;
+.button1, .button2, .button3 {
+    display: flex;
+    flex-wrap: wrap;
     font-size: 20px;
     align-content: center;
     justify-content: space-around;
@@ -359,10 +346,10 @@ p {
     color: #3d3d3d;
     font-family: "dynapuff";
     font-weight: 600;
-    margin-left: 35px;
-    margin-right: 50%;
+    margin: 5px auto;
 }
-.grid-container a:link:hover{
+
+.box-container a:link:hover{
     background-color: #fe9fad;
     opacity: 0.9;
     color:#fafafa;
@@ -370,44 +357,21 @@ p {
      0 17px 50px 0 rgba(0,0,0,0.19);
 }
 
-.button2{
-    display: inline-block;
-    font-size: 20px;
-    align-content: center;
-    justify-content: space-around;
-    border-radius: 5%;
-    border: 0px solid;
-    width: 200px;
-    height: 80px;
-    background-color: #fe9fad;
-    color: #3d3d3d;
-    font-family: "dynapuff";
-    font-weight: 600;
-    margin-left: 35px;
-    margin-right: 50%;
-    margin-top: 5px;
-    
-}
 
-.button3{
-    display: inline-block;
-    font-size: 20px;
-    align-content: center;
-    justify-content: space-around;
-    border-radius: 5%;
-    border: 0px solid;
-    width: 200px;
-    height: 80px;
-    background-color: #fe9fad;
-    color: #3d3d3d;
-    font-family: "dynapuff";
-    font-weight: 600;
-    margin-left: 35px;
-    margin-right: 50%;
-    margin-top: 5px;
+@media only screen and (max-width: 600px) {
+    .box-container a:link {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        font-size: medium;
+        align-content: center;
+        width: 100%;
+        height: 60px;
+        margin: 5px auto;
+        max-width: 80%;
+    }
 
 }
-
  
 /* Tästä alkaa äänikirja sliderit */
 .aanikirjat {
@@ -437,7 +401,7 @@ p {
     );
 
   }
-  .slider::-webkit-scrollbar {
+  .aanikirja_slider::-webkit-scrollbar {
     display: none;
   }
 
@@ -504,7 +468,7 @@ p {
 }
 
 @media screen and (max-width: 700px) {
-    p3 {
+    .meistaTeksti {
         font-size: large;
     }
 }
