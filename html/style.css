@@ -128,6 +128,9 @@ li {
 
 
 /* SLIDER*/
+.mobilehahmo {
+    display: none;
+}
 .slider{
     width: 100%;
     height: 200px;
@@ -196,10 +199,11 @@ li {
 
 
 @media only screen and (max-width: 600px){
-    .flex-container, .item{
+    .slider, .flex-container, .item{
         display: none;
 
     }
+   
     
 }
 
