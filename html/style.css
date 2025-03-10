@@ -5,10 +5,11 @@ body {
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
-    font-family: "comic neue";
+    font-family: "Goudy bookletter 1911";
     text-align: center;
     color: #141414;
     min-height: 100vh;
+    margin: 0%;
     
 }
 /* NAVIGOINTI */
@@ -522,6 +523,7 @@ p {
 footer {
   
     text-align: center;
+    font-family: "Goudy bookletter 1911";
     width: 100%;
     background-color: #a0ac91;
     opacity: 0.9;
